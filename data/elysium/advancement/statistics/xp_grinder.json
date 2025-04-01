@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}",
+            "id": "minecraft:lapis_block"
+        },
+        "title": {
+            "text": "XP Grinder"
+        },
+        "description": {
+            "color": "dark_purple",
+            "text": "Reach 300 experience levels"
+        },
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "elysium:statistics/overlevelling",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "level": {
+                            "min": 300
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,162 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:tuff",
+              "conditions": [
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "children": [
+                {
+                  "type": "empty"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.01
+                }
+              ]
+            },
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "item",
+                  "weight": 8,
+                  "name": "minecraft:tuff",
+                  "functions": [
+                    {
+                      "function": "set_count",
+                      "count": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "weight": 2,
+                  "name": "minecraft:quartz",
+                  "functions": [
+                    {
+                      "function": "set_count",
+                      "count": 1
+                    },
+                    {
+                      "function": "set_count",
+                      "add": true,
+                      "count": 1,
+                      "conditions": [
+                        {
+                          "condition": "match_tool",
+                          "predicate": {
+                            "components": {
+                              "item_name": "\"Bismuth Bronze Pickaxe\""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "function": "apply_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "formula": "ore_drops"
+                    },
+                    {
+                      "function": "set_components",
+                      "components": {
+                        "minecraft:rarity": "uncommon"
+                      }
+                    },
+                    {
+                      "function": "set_name",
+                      "name": [
+                        {
+                          "text": "Clear Quartz"
+                        }
+                      ],
+                      "target": "item_name"
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "weight": 1,
+                  "name": "minecraft:gunpowder",
+                  "functions": [
+                    {
+                      "function": "set_count",
+                      "count": 1
+                    },
+                    {
+                      "function": "set_components",
+                      "components": {
+                        "minecraft:rarity": "uncommon",
+                        "minecraft:custom_model_data": {
+                  "floats": [
+                    2005
+                  ]
+                }
+                      }
+                    },
+                    {
+                      "function": "set_name",
+                      "name": [
+                        {
+                          "text": "Titanium Bits"
+                        }
+                      ],
+                      "target": "item_name"
+                    },
+                    {
+                      "function": "apply_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "formula": "minecraft:ore_drops"
+                    },
+                    {
+                      "function": "set_count",
+                      "add": true,
+                      "count": 1,
+                      "conditions": [
+                        {
+                          "condition": "minecraft:match_tool",
+                          "predicate": {
+                            "components": {
+                              "minecraft:item_name": "\"Bismuth Bronze Pickaxe\""
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Statistics"
+        },
+        "description": {
+            "text": "If your numbers go up, you're having more fun",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:writable_book"
+        },
+        "background": "minecraft:textures/block/loom_side.png",
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "give": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "parent": "elysium:elysium/smelt_iron",
+    "criteria": {
+        "lava_bucket": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:lava_bucket"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancements.story.lava_bucket.description",
+            "color": "#ffcd87"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:lava_bucket"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.story.lava_bucket.title"
+        }
+    },
+    "requirements": [
+        [
+            "lava_bucket"
+        ]
+    ]
+}

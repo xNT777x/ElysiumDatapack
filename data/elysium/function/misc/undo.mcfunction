@@ -1,0 +1,1 @@
+advancement revoke @a from elysium:function/root

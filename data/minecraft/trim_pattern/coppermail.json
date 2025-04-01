@@ -1,0 +1,7 @@
+{
+    "asset_id": "minecraft:coppermail",
+    "description":{
+        "translate": "Coppermail Armor Trim"
+    },
+    "template_item": "minecraft:barrier"
+}

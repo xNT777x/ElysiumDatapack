@@ -1,0 +1,36 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "That Was Close!"
+        },
+        "description": {
+            "text": "Use a Saving Grace of any kind.",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "nbt": "{CustomPotionColor:16701501}",
+            "id": "minecraft:potion"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "effect": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:levitation": {
+                        "amplifier": {
+                            "min": 15,
+                            "max": 20
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:elysium/obtain_armor"
+}

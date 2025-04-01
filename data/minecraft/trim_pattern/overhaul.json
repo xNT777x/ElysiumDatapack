@@ -1,0 +1,7 @@
+{
+    "asset_id": "minecraft:overhaul",
+    "description":{
+        "translate": "Overhaul Armor Trim"
+    },
+    "template_item": "minecraft:barrier"
+}

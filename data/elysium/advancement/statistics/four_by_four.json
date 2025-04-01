@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:chicken"
+        },
+        "title": {
+            "text": "Four By Four"
+        },
+        "description": {
+            "color": "dark_purple",
+            "text": "Breed 2500 animals"
+        },
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "elysium:statistics/cupid",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:animals_bred",
+                                "value": {
+                                    "min": 2500
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

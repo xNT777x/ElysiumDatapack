@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Calchester"
+        },
+        "description": {
+            "text": "Enter Calchester.",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:stone_bricks"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -684,
+                                "max": -588
+                            },
+                            "y": {
+                                "min": 80,
+                                "max": 110
+                            },
+                            "z": {
+                                "min": -394,
+                                "max": -281
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/skytale_village"
+}

@@ -1,0 +1,39 @@
+{
+    "display": {
+        "icon": {
+            "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}",
+            "id": "minecraft:netherite_axe"
+        },
+        "title": {
+            "text": "Master PvPer"
+        },
+        "description": {
+            "color": "light_purple",
+            "text": "Kill 1000 Players"
+        },
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "elysium:statistics/hitman",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:killed",
+                                "stat": "minecraft:player",
+                                "value": {
+                                    "min": 1000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

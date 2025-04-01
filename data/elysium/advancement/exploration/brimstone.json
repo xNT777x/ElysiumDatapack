@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Brimstone"
+        },
+        "description": {
+            "text": "Enter Brimstone",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:deepslate"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 167,
+                                "max": 254
+                            },
+                            "y": {
+                                "min": 190,
+                                "max": 220
+                            },
+                            "z": {
+                                "min": 1018,
+                                "max": 1087
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/yrne_village"
+}

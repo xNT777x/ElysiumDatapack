@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "nbt": "{Potion:\"minecraft:invisibility\"}",
+            "id": "minecraft:potion"
+        },
+        "title": {
+            "text": "Shady Deals"
+        },
+        "description": {
+            "text": "Trade with a Wandering Trader while he is invisible"
+        },
+        "frame": "goal"
+    },
+    "parent": "elysium:misc/travelling_merchant",
+    "criteria": {
+        "trade": {
+            "trigger": "minecraft:villager_trade",
+            "conditions": {
+                "villager": {
+                    "type": "wandering_trader",
+                    "effects": {
+                        "minecraft:invisibility": {}
+                    }
+                }
+            }
+        }
+    }
+}

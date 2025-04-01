@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "# #",
+        " # "
+    ],
+    "key": {
+        "#": "minecraft:birch_planks"
+    },
+    "result": {
+        "id": "minecraft:birch_log",
+        "count": 1
+    },
+    "group": "Elysium"
+}

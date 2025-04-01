@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "The Last Temple"
+        },
+        "description": {
+            "text": "Find The Last Temple",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:amethyst_cluster"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 1072,
+                                "max": 1152
+                            },
+                            "y": {
+                                "min": 70,
+                                "max": 130
+                            },
+                            "z": {
+                                "min": 99,
+                                "max": 147
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/researcher_temple"
+}

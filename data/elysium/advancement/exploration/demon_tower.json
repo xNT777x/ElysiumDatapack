@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Demon Tower"
+        },
+        "description": {
+            "text": "Find the Demon Tower",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:chiseled_stone_bricks"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 398,
+                                "max": 439
+                            },
+                            "y": {
+                                "min": 240,
+                                "max": 300
+                            },
+                            "z": {
+                                "min": -1083,
+                                "max": -1036
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/last_temple"
+}

@@ -1,0 +1,40 @@
+{
+    "display": {
+        "icon": {
+            "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}",
+            "id": "minecraft:red_bed"
+        },
+        "title": {
+            "text": "AFK God"
+        },
+        "description": {
+            "color": "light_purple",
+            "text": "Play for 1000 hours."
+        },
+        "announce_to_chat": true,
+        "hidden": true,
+        "frame": "challenge"
+    },
+    "parent": "elysium:statistics/all_game_no_life",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:play_time",
+                                "value": {
+                                    "min": 72000000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

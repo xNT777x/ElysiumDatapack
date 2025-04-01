@@ -1,0 +1,7 @@
+{
+    "asset_id": "minecraft:tempered",
+    "description":{
+        "translate": "Tempered Armor Trim"
+    },
+    "template_item": "minecraft:barrier"
+}

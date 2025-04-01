@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:golden_horse_armor"
+        },
+        "title": {
+            "text": "Sheriff Firearm"
+        },
+        "description": {
+            "color": "#75E1FF",
+            "text": "Ride 10km on a horse"
+        },
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "elysium:statistics/horse_training",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:horse_one_cm",
+                                "value": {
+                                    "min": 1000000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

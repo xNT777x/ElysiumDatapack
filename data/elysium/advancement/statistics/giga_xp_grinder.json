@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}",
+            "id": "minecraft:sculk"
+        },
+        "title": {
+            "text": "Giga XP Grinder"
+        },
+        "description": {
+            "color": "light_purple",
+            "text": "Reach 1000 experience levels"
+        },
+        "announce_to_chat": true,
+        "frame": "challenge",
+        "hidden": true
+    },
+    "parent": "elysium:statistics/xp_grinder",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "level": {
+                            "min": 1000
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:water_bucket"
+        },
+        "title": {
+            "text": "PLEASE Take a Shower!!"
+        },
+        "description": {
+            "color": "#75E1FF",
+            "text": "Play for 72 hours."
+        },
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "elysium:statistics/go_touch_grass",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:play_time",
+                                "value": {
+                                    "min": 5184000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

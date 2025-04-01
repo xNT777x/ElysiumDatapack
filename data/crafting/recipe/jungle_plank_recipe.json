@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "//",
+        "J/"
+    ],
+    "key": {
+        "/": "minecraft:stick",
+        "J": "minecraft:jungle_leaves"
+    },
+    "result": {
+        "id": "minecraft:jungle_planks",
+        "count": 1
+    },
+    "group": "Elysium"
+}

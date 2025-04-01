@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:powder_snow_bucket"
+        },
+        "title": {
+            "translate": "Polar Opposites"
+        },
+        "description": {
+            "color": "green",
+            "translate": "Start freezing in the Desert"
+        },
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "elysium:misc/aww_man",
+    "criteria": {
+        "nether_freeze": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:powder_snow",
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "biome": "desert"
+                            },
+                            "nbt": "{TicksFrozen:140}"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

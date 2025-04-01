@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Frog Village"
+        },
+        "description": {
+            "text": "Find the Frog Village.",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:lily_pad"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -896,
+                                "max": -817
+                            },
+                            "y": {
+                                "min": 70,
+                                "max": 100
+                            },
+                            "z": {
+                                "min": 320,
+                                "max": 399
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/spawn"
+}

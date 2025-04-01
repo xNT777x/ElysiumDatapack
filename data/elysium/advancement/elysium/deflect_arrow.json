@@ -1,0 +1,43 @@
+{
+    "parent": "elysium:elysium/obtain_armor",
+    "criteria": {
+        "deflected_projectile": {
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "is_projectile"
+                            }
+                        ]
+                    },
+                    "blocked": true
+                }
+            },
+            "trigger": "minecraft:entity_hurt_player"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancements.story.deflect_arrow.description",
+            "color": "#ffcd87"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "nbt": "{Damage:0}",
+            "id": "minecraft:shield"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.story.deflect_arrow.title"
+        }
+    },
+    "requirements": [
+        [
+            "deflected_projectile"
+        ]
+    ]
+}

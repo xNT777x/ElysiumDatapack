@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:furnace_minecart"
+        },
+        "title": {
+            "text": "I Like Trains"
+        },
+        "description": {
+            "color": "#75E1FF",
+            "text": "Ride 10km in a minecart"
+        },
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "elysium:statistics/minecart_rider",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:minecart_one_cm",
+                                "value": {
+                                    "min": 1000000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

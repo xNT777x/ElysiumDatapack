@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Yrne Village"
+        },
+        "description": {
+            "text": "Enter Yrne Village.",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:snowball"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 672,
+                                "max": 734
+                            },
+                            "y": {
+                                "min": 130,
+                                "max": 160
+                            },
+                            "z": {
+                                "min": -611,
+                                "max": -533
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/matataki_village"
+}

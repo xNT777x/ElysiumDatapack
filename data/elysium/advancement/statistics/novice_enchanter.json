@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}",
+            "id": "minecraft:iron_sword"
+        },
+        "title": {
+            "text": "Novice Enchanter"
+        },
+        "description": {
+            "color": "green",
+            "text": "Enchant 10 items"
+        },
+        "announce_to_chat": true
+    },
+    "parent": "elysium:statistics/root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:enchant_item",
+                                "value": {
+                                    "min": 10
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

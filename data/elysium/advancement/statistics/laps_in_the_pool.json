@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "nbt": "{display:{color:41727}}",
+            "id": "minecraft:leather_leggings"
+        },
+        "title": {
+            "text": "Laps in the pool"
+        },
+        "description": {
+            "color": "green",
+            "text": "Swim 1km"
+        },
+        "announce_to_chat": true
+    },
+    "parent": "elysium:statistics/root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:swim_one_cm",
+                                "value": {
+                                    "min": 100000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

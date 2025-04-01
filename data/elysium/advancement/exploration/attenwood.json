@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Attenwood Village"
+        },
+        "description": {
+            "text": "Enter Attenwood Village",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:stripped_dark_oak_log"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 385,
+                                "max": 449
+                            },
+                            "y": {
+                                "min": 90,
+                                "max": 120
+                            },
+                            "z": {
+                                "min": -51,
+                                "max": -3
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/brimstone"
+}

@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:firework_rocket"
+        },
+        "title": {
+            "text": "Frequent Flyer"
+        },
+        "description": {
+            "color": "dark_purple",
+            "text": "Fly 1000km with elytra"
+        },
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "elysium:statistics/supersonic",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:aviate_one_cm",
+                                "value": {
+                                    "min": 100000000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

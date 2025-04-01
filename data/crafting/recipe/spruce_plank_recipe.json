@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "//",
+        "S/"
+    ],
+    "key": {
+        "/": "minecraft:stick",
+        "S": "minecraft:spruce_leaves"
+    },
+    "result": {
+        "id": "minecraft:spruce_planks",
+        "count": 1
+    },
+    "group": "Elysium"
+}

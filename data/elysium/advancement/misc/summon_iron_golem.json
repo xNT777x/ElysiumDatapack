@@ -1,0 +1,39 @@
+{
+    "parent": "elysium:misc/walk_on_powder_snow_with_leather_boots",
+    "criteria": {
+        "summoned_golem": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:iron_golem"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:summoned_entity"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancements.adventure.summon_iron_golem.description"
+        },
+        "frame": "goal",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:carved_pumpkin"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.adventure.summon_iron_golem.title"
+        }
+    },
+    "requirements": [
+        [
+            "summoned_golem"
+        ]
+    ]
+}

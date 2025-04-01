@@ -1,0 +1,23 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Function"
+        },
+        "description": {
+            "text": "Intended for running commands"
+        },
+        "icon": {
+            "id": "minecraft:command_block"
+        },
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "elysium:misc/undo"
+    }
+}

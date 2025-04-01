@@ -1,0 +1,532 @@
+{
+  "type": "chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1250,
+                "minecraft:rarity": "rare",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1004
+                  ]
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "attack_damage",
+                    "type": "attack_damage",
+                    "amount": 7,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "attack_speed",
+                    "type": "attack_speed",
+                    "amount": -3,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "movement_speed",
+                    "type": "movement_speed",
+                    "amount": -0.05,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "entity_interaction_range",
+                    "type": "entity_interaction_range",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "sweeping_damage_ratio",
+                    "type": "sweeping_damage_ratio",
+                    "amount": 0.75,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Steel Longsword"
+                }
+              ],
+              "target": "item_name"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1250,
+                "minecraft:rarity": "rare",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1009
+                  ]
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "attack_damage",
+                    "type": "attack_damage",
+                    "amount": 9,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "attack_speed",
+                    "type": "attack_speed",
+                    "amount": -3.25,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "movement_speed",
+                    "type": "movement_speed",
+                    "amount": -0.05,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "entity_interaction_range",
+                    "type": "entity_interaction_range",
+                    "amount": 0.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Steel Hammer"
+                }
+              ],
+              "target": "item_name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1000,
+                "minecraft:rarity": "rare",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "max_health_chest",
+                    "type": "max_health",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1000,
+                "minecraft:rarity": "rare",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "max_health_legs",
+                    "type": "max_health",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "legs"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:chainmail_chestplate",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1250,
+                "minecraft:rarity": "rare",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "max_health_chest",
+                    "type": "max_health",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "id": "knockback_resistance_chest",
+                    "type": "knockback_resistance",
+                    "amount": 0.1,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "id": "movement_speed_chest",
+                    "type": "movement_speed",
+                    "amount": -0.01,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  }
+                ],
+                "minecraft:trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:steel_plate"
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Steel Chestplate"
+                }
+              ],
+              "target": "item_name"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:chainmail_leggings",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1250,
+                "minecraft:rarity": "rare",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "max_health_legs",
+                    "type": "max_health",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "legs"
+                  },
+                  {
+                    "id": "knockback_resistance_legs",
+                    "type": "knockback_resistance",
+                    "amount": 0.1,
+                    "operation": "add_value",
+                    "slot": "legs"
+                  },
+                  {
+                    "id": "movement_speed_legs",
+                    "type": "movement_speed",
+                    "amount": -0.01,
+                    "operation": "add_value",
+                    "slot": "legs"
+                  }
+                ],
+                "minecraft:trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:steel_plate"
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Steel Leggings"
+                }
+              ],
+              "target": "item_name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1000,
+                "minecraft:rarity": "rare",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "max_health_head",
+                    "type": "max_health",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "head"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1000,
+                "minecraft:rarity": "rare",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "max_health_feet",
+                    "type": "max_health",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "feet"
+                  },
+                  {
+                    "id": "safe_fall_distance_feet",
+                    "type": "safe_fall_distance",
+                    "amount": 0.5,
+                    "operation": "add_value",
+                    "slot": "feet"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:chainmail_helmet",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1250,
+                "minecraft:rarity": "rare",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "max_health_head",
+                    "type": "max_health",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head"
+                  },
+                  {
+                    "id": "knockback_resistance_head",
+                    "type": "knockback_resistance",
+                    "amount": 0.1,
+                    "operation": "add_value",
+                    "slot": "head"
+                  },
+                  {
+                    "id": "movement_speed_head",
+                    "type": "movement_speed",
+                    "amount": -0.01,
+                    "operation": "add_value",
+                    "slot": "head"
+                  }
+                ],
+                "minecraft:trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:steel_plate"
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Steel Helmet"
+                }
+              ],
+              "target": "item_name"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:chainmail_boots",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 1250,
+                "minecraft:rarity": "rare",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "max_health_feet",
+                    "type": "max_health",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "feet"
+                  },
+                  {
+                    "id": "knockback_resistance_feet",
+                    "type": "knockback_resistance",
+                    "amount": 0.1,
+                    "operation": "add_value",
+                    "slot": "feet"
+                  },
+                  {
+                    "id": "movement_speed_feet",
+                    "type": "movement_speed",
+                    "amount": -0.01,
+                    "operation": "add_value",
+                    "slot": "feet"
+                  }
+                ],
+                "minecraft:trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:steel_plate"
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Steel Boots"
+                }
+              ],
+              "target": "item_name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:brick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 24,
+                "max": 64
+              }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 64,
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    3000
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "#CD7F32",
+                  "text": "Bronze Coin"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "text": "Penny for your thoughts?"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

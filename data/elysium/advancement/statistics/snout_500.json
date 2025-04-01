@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:carrot_on_a_stick"
+        },
+        "title": {
+            "text": "Snout 500"
+        },
+        "description": {
+            "color": "#75E1FF",
+            "text": "Ride 1km on a pig"
+        },
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "elysium:statistics/pig_training",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:pig_one_cm",
+                                "value": {
+                                    "min": 100000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

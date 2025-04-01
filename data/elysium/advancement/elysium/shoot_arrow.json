@@ -1,0 +1,40 @@
+{
+    "parent": "elysium:elysium/mine_stone",
+    "criteria": {
+        "shot_arrow": {
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "#minecraft:arrows"
+                        },
+                        "is_projectile": true
+                    }
+                }
+            },
+            "trigger": "minecraft:player_hurt_entity"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancements.adventure.shoot_arrow.description",
+            "color": "#ffcd87"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "nbt": "{Damage:0}",
+            "id": "minecraft:bow"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.adventure.shoot_arrow.title"
+        }
+    },
+    "requirements": [
+        [
+            "shot_arrow"
+        ]
+    ]
+}

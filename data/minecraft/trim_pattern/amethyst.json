@@ -1,0 +1,7 @@
+{
+    "asset_id": "minecraft:amethyst",
+    "description":{
+        "translate": "Amethyst Armor Trim"
+    },
+    "template_item": "minecraft:barrier"
+}

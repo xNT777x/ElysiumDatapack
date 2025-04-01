@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Elder Tree's Quest"
+        },
+        "description": {
+            "text": "Find Evan Michael.",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:dark_oak_sapling"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 734,
+                                "max": 742
+                            },
+                            "y": {
+                                "min": 120,
+                                "max": 130
+                            },
+                            "z": {
+                                "min": -1024,
+                                "max": -1020
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/stans_findings"
+}

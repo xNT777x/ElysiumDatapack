@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Elder Tree"
+        },
+        "description": {
+            "text": "Enconter the Elder Tree... or whatever is left of it...",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:dark_oak_sapling"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 372,
+                                "max": 417
+                            },
+                            "y": {
+                                "min": 90,
+                                "max": 120
+                            },
+                            "z": {
+                                "min": 88,
+                                "max": 138
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/guild_house"
+}

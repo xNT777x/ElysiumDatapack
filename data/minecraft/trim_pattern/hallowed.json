@@ -1,0 +1,7 @@
+{
+    "asset_id": "minecraft:hallowed",
+    "description":{
+        "translate": "Hallowed Armor Trim"
+    },
+    "template_item": "minecraft:barrier"
+}

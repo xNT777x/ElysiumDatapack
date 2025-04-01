@@ -1,0 +1,78 @@
+{
+    "parent": "elysium:elysium/mine_diamond",
+    "criteria": {
+        "diamond_boots": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:diamond_boots"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "diamond_chestplate": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:diamond_chestplate"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "diamond_helmet": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:diamond_helmet"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "diamond_leggings": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:diamond_leggings"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancements.story.shiny_gear.description",
+            "color": "#ffcd87"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "nbt": "{Damage:0}",
+            "id": "minecraft:diamond_chestplate"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.story.shiny_gear.title"
+        }
+    },
+    "requirements": [
+        [
+            "diamond_helmet",
+            "diamond_chestplate",
+            "diamond_leggings",
+            "diamond_boots"
+        ]
+    ]
+}

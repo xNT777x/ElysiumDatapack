@@ -1,0 +1,7 @@
+{
+    "asset_id": "minecraft:craftian",
+    "description":{
+        "translate": "Craftian Armor Trim"
+    },
+    "template_item": "minecraft:barrier"
+}

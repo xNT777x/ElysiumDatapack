@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:black_concrete_powder"
+        },
+        "title": {
+            "text": "The Point of No Return"
+        },
+        "description": {
+            "text": "Fall into the void! Bye bye!!",
+            "color": "#ffcd87"
+        },
+        "announce_to_chat": true
+    },
+    "parent": "elysium:elysium/win_parkour",
+    "criteria": {
+        "world_height": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "position": {
+                                    "y": {
+                                        "max": -64
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

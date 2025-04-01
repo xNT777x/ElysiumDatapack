@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Welcome!"
+        },
+        "description": {
+            "text": "Get to the Elysium Spawn.",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:red_bed"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -55,
+                                "max": 70
+                            },
+                            "y": {
+                                "min": 40,
+                                "max": 90
+                            },
+                            "z": {
+                                "min": -31,
+                                "max": 62
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/root"
+}

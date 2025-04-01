@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:sunflower"
+        },
+        "title": {
+            "text": "The First Night"
+        },
+        "description": {
+            "color": "green",
+            "text": "Survive the first night in Elysium"
+        },
+        "announce_to_chat": true
+    },
+    "parent": "elysium:statistics/root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

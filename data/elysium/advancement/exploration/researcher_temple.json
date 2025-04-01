@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Researcher's Temple"
+        },
+        "description": {
+            "text": "Find the researcher's Temple",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:chiseled_tuff"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 32,
+                                "max": 61
+                            },
+                            "y": {
+                                "min": 35,
+                                "max": 70
+                            },
+                            "z": {
+                                "min": -453,
+                                "max": -406
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/revival_temple"
+}

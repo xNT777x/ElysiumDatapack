@@ -1,0 +1,3 @@
+function elysium:give/mystery_boxes/farming_barrel
+function elysium:give/mystery_boxes/magic_barrel
+function elysium:give/mystery_boxes/supplies_barrel

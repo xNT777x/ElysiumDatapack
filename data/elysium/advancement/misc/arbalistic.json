@@ -1,0 +1,35 @@
+{
+    "parent": "elysium:misc/bullseye",
+    "criteria": {
+        "arbalistic": {
+            "conditions": {
+                "unique_entity_types": 5
+            },
+            "trigger": "minecraft:killed_by_crossbow"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancements.adventure.arbalistic.description"
+        },
+        "frame": "challenge",
+        "hidden": false,
+        "icon": {
+            "nbt": "{Damage:0}",
+            "id": "minecraft:crossbow"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.adventure.arbalistic.title"
+        }
+    },
+    "requirements": [
+        [
+            "arbalistic"
+        ]
+    ],
+    "rewards": {
+        "experience": 85
+    }
+}

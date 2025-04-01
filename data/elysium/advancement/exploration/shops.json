@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Player Market"
+        },
+        "description": {
+            "text": "Visit the Player Market.",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:emerald"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 275,
+                                "max": 367
+                            },
+                            "y": {
+                                "min": 120,
+                                "max": 200
+                            },
+                            "z": {
+                                "min": 421,
+                                "max": 520
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/spawn"
+}

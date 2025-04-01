@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  #",
+        "LLL",
+        "i i"
+    ],
+    "key": {
+        "#": "minecraft:tripwire_hook",
+        "L": "minecraft:leather",
+        "i": "minecraft:iron_ingot"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:saddle"
+    },
+    "group": "Elysium"
+}

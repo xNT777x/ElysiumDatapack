@@ -1,0 +1,1 @@
+give @s chest[enchantment_glint_override=true,lore=['[{"text":"Ruins 4","italic":false}]'],container_loot={loot_table:"elysium:chests/ruins4"}]

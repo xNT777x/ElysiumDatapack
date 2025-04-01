@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "The Revival Temple"
+        },
+        "description": {
+            "text": "Find the Revival Temple",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:oxidized_cut_copper"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -303,
+                                "max": -273
+                            },
+                            "y": {
+                                "min": 70,
+                                "max": 110
+                            },
+                            "z": {
+                                "min": -736,
+                                "max": -726
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/spawn"
+}

@@ -1,0 +1,1 @@
+give @s barrel[enchantment_glint_override=true,lore=['[{"text":"Magic Barrel","italic":false}]'],container_loot={loot_table:"elysium:mystery_boxes/magic_barrel"}]

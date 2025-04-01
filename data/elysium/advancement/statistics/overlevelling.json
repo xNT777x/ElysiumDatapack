@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}",
+            "id": "minecraft:enchanted_book"
+        },
+        "title": {
+            "text": "Overlevelling"
+        },
+        "description": {
+            "color": "#75E1FF",
+            "text": "Reach 100 experience levels"
+        },
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "elysium:statistics/level_up",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "level": {
+                            "min": 100
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

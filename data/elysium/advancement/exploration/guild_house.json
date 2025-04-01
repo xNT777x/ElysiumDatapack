@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Dreamer\u00e2\u20ac\u2122s Guild"
+        },
+        "description": {
+            "text": "Visit the guild house.",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:cyan_banner"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 699,
+                                "max": 736
+                            },
+                            "y": {
+                                "min": 110,
+                                "max": 150
+                            },
+                            "z": {
+                                "min": -507,
+                                "max": -465
+                            }
+                        },
+                        "smokey": false
+                    }
+                }
+            }
+        }
+    },
+    "parent": "elysium:exploration/shops"
+}

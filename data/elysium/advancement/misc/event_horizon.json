@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:ender_eye"
+        },
+        "title": {
+            "text": "Event Horizon"
+        },
+        "description": {
+            "color": "dark_purple",
+            "text": "Survive void damage"
+        },
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false,
+        "frame": "challenge"
+    },
+    "parent": "elysium:misc/custom_boss_fight",
+    "criteria": {
+        "event_horizon": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "elysium:misc/event_horizon_fail"
+    }
+}

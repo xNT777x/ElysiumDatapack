@@ -1,0 +1,25 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Extras"
+        },
+        "description": {
+            "text": "Fun side challenges!",
+            "color": "#ffcd87"
+        },
+        "icon": {
+            "id": "minecraft:axolotl_bucket"
+        },
+        "background": "minecraft:textures/block/amethyst_block.png",
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "give": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

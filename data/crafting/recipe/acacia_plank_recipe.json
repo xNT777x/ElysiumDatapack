@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "//",
+        "A/"
+    ],
+    "key": {
+        "/": "minecraft:stick",
+        "A": "minecraft:acacia_leaves"
+    },
+    "result": {
+        "id": "minecraft:acacia_planks",
+        "count": 1
+    },
+    "group": "Elysium"
+}
