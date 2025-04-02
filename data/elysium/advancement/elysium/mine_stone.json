@@ -5,7 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "tag": "minecraft:stone_tool_materials"
+                        "items": "#minecraft:stone_tool_materials"
                     }
                 ]
             },
@@ -21,8 +21,10 @@
         "frame": "task",
         "hidden": false,
         "icon": {
-            "nbt": "{Damage:0}",
-            "id": "minecraft:wooden_pickaxe"
+            "id": "minecraft:wooden_pickaxe",
+            "components": {
+                "damage": 0
+            }
         },
         "show_toast": true,
         "title": {

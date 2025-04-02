@@ -23,8 +23,10 @@
         "frame": "goal",
         "hidden": false,
         "icon": {
-            "nbt": "{Damage:0}",
-            "id": "minecraft:elytra"
+            "id": "minecraft:elytra",
+            "components": {
+                "damage": 0
+            }
         },
         "show_toast": true,
         "title": {
