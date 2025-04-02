@@ -1,0 +1,7 @@
+give @p wooden_hoe[max_damage=131] 1
+give @p stone_hoe[max_damage=195] 1
+give @p stone_hoe[max_damage=500,item_name='"Copper Hoe"',rarity="rare",custom_model_data={floats:[1401]}] 1
+give @p stone_hoe[max_damage=650,item_name='"Bismuth Bronze Hoe"',rarity="rare",custom_model_data={floats:[1403]}] 1
+give @p golden_hoe[max_damage=750,item_name='"Tin Bronze Hoe"',rarity="rare",custom_model_data={floats:[1402]},attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:2.5,operation:"add_value",slot:"mainhand"},{id:"attack_speed",type:"attack_speed",amount:-1.75,operation:"add_value",slot:"mainhand"},{id:"entity_interaction_range",type:"entity_interaction_range",amount:0.5,operation:"add_value",slot:"mainhand"}]] 1
+give @p iron_hoe[max_damage=1000] 1
+give @p iron_hoe[max_damage=1500,item_name='"Titanium Hoe"',rarity="rare",custom_model_data={floats:[1404]},attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:3,operation:"add_value",slot:"mainhand"},{id:"attack_speed",type:"attack_speed",amount:-1.6,operation:"add_value",slot:"mainhand"},{id:"mining_efficiency",type:"mining_efficiency",amount:5,operation:"add_value",slot:"mainhand"},{id:"entity_interaction_range",type:"entity_interaction_range",amount:0.5,operation:"add_value",slot:"mainhand"}]] 1
