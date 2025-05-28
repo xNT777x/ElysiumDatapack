@@ -203,10 +203,7 @@
             {
               "function": "set_count",
               "add": false,
-              "count": {
-                "min": 0,
-                "max": 1
-              }
+              "count": 1
             },
             {
               "function": "minecraft:enchanted_count_increase",
@@ -221,8 +218,8 @@
               "function": "set_count",
               "add": true,
               "count": {
-                "max": 1,
-                "min": 0
+                "max": 2,
+                "min": 1
               },
               "conditions": [
                 {
