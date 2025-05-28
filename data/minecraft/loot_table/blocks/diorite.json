@@ -32,20 +32,6 @@
               "type": "group",
               "children": [
                 {
-                  "type": "empty"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "random_chance",
-                  "chance": 0.01
-                }
-              ]
-            },
-            {
-              "type": "group",
-              "children": [
-                {
                   "type": "item",
                   "weight": 1,
                   "name": "minecraft:gunpowder",
@@ -61,8 +47,8 @@
                       "function": "set_count",
                       "add": true,
                       "count": {
-                        "type": "constant",
-                        "value": 1
+                        "max": 3,
+                        "min": 1
                       },
                       "conditions": [
                         {
@@ -72,27 +58,27 @@
                               "item_name": "\"Bismuth Bronze Pickaxe\""
                             }
                           }
+                        },
+                        {
+                          "condition": "random_chance",
+                          "chance": 0.33
                         }
                       ]
                     },
                     {
                       "function": "apply_bonus",
                       "enchantment": "minecraft:fortune",
-                      "formula": "binomial_with_bonus_count",
-                      "parameters": {
-                        "extra": 0,
-                        "probability": 1
-                      }
+                      "formula": "ore_drops"
                     },
                     {
                       "function": "set_components",
                       "components": {
                         "minecraft:rarity": "uncommon",
                         "minecraft:custom_model_data": {
-                  "floats": [
-                    2004
-                  ]
-                }
+                          "floats": [
+                            2004
+                          ]
+                        }
                       }
                     },
                     {
@@ -122,8 +108,8 @@
                       "function": "set_count",
                       "add": true,
                       "count": {
-                        "type": "constant",
-                        "value": 1
+                        "max": 2,
+                        "min": 1
                       },
                       "conditions": [
                         {
@@ -133,27 +119,27 @@
                               "item_name": "\"Bismuth Bronze Pickaxe\""
                             }
                           }
+                        },
+                        {
+                          "condition": "random_chance",
+                          "chance": 0.33
                         }
                       ]
                     },
                     {
                       "function": "apply_bonus",
                       "enchantment": "minecraft:fortune",
-                      "formula": "binomial_with_bonus_count",
-                      "parameters": {
-                        "extra": 0,
-                        "probability": 1
-                      }
+                      "formula": "ore_drops"
                     },
                     {
                       "function": "set_components",
                       "components": {
                         "minecraft:rarity": "uncommon",
                         "minecraft:custom_model_data": {
-                  "floats": [
-                    2006
-                  ]
-                }
+                          "floats": [
+                            2006
+                          ]
+                        }
                       }
                     },
                     {
@@ -183,8 +169,8 @@
                       "function": "set_count",
                       "add": true,
                       "count": {
-                        "type": "constant",
-                        "value": 1
+                        "max": 3,
+                        "min": 1
                       },
                       "conditions": [
                         {
@@ -194,27 +180,27 @@
                               "item_name": "\"Bismuth Bronze Pickaxe\""
                             }
                           }
+                        },
+                        {
+                          "condition": "random_chance",
+                          "chance": 0.33
                         }
                       ]
                     },
                     {
                       "function": "apply_bonus",
                       "enchantment": "minecraft:fortune",
-                      "formula": "binomial_with_bonus_count",
-                      "parameters": {
-                        "extra": 0,
-                        "probability": 1
-                      }
+                      "formula": "ore_drops"
                     },
                     {
                       "function": "set_components",
                       "components": {
                         "minecraft:rarity": "uncommon",
                         "minecraft:custom_model_data": {
-                  "floats": [
-                    2001
-                  ]
-                }
+                          "floats": [
+                            2001
+                          ]
+                        }
                       }
                     },
                     {

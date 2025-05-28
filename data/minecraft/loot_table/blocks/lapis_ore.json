@@ -43,7 +43,10 @@
                 {
                   "function": "set_count",
                   "add": true,
-                  "count": 2,
+                  "count": {
+                    "max": 9,
+                    "min": 4
+                  },
                   "conditions": [
                     {
                       "condition": "match_tool",
@@ -52,6 +55,10 @@
                           "item_name": "\"Bismuth Bronze Pickaxe\""
                         }
                       }
+                    },
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.33
                     }
                   ]
                 },

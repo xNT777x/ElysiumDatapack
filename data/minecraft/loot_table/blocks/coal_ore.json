@@ -48,11 +48,7 @@
                                         {
                                             "function": "set_count",
                                             "add": true,
-                                            "count": {
-                                                "type": "binomial",
-                                                "n": 1,
-                                                "p": 0.57
-                                            },
+                                            "count": 1,
                                             "conditions": [
                                                 {
                                                     "condition": "minecraft:match_tool",
@@ -61,6 +57,10 @@
                                                             "minecraft:item_name": "\"Bismuth Bronze Pickaxe\""
                                                         }
                                                     }
+                                                },
+                                                {
+                                                    "condition": "minecraft:random_chance",
+                                                    "chance": 0.33
                                                 }
                                             ]
                                         }
@@ -74,6 +74,11 @@
                                         {
                                             "function": "set_count",
                                             "count": 1
+                                        },
+                                        {   
+                                            "function": "minecraft:apply_bonus",
+                                            "enchantment": "minecraft:fortune",
+                                            "formula": "minecraft:ore_drops"
                                         },
                                         {
                                             "function": "set_name",

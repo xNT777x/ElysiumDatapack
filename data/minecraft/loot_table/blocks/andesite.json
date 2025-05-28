@@ -8,6 +8,7 @@
           "type": "minecraft:alternatives",
           "children": [
             {
+              "_comment": "returns the same block when Silk Touch is used",
               "type": "minecraft:item",
               "weight": 1,
               "name": "minecraft:andesite",
@@ -26,20 +27,6 @@
                       ]
                     }
                   }
-                }
-              ]
-            },
-            {
-              "type": "group",
-              "children": [
-                {
-                  "type": "empty"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "random_chance",
-                  "chance": 0.01
                 }
               ]
             },
@@ -63,8 +50,8 @@
                       "function": "set_count",
                       "add": true,
                       "count": {
-                        "type": "constant",
-                        "value": 1
+                        "max": 3,
+                        "min": 1
                       },
                       "conditions": [
                         {
@@ -74,27 +61,27 @@
                               "item_name": "\"Bismuth Bronze Pickaxe\""
                             }
                           }
+                        },
+                        {
+                          "condition": "random_chance",
+                          "chance": 0.33
                         }
                       ]
                     },
                     {
                       "function": "apply_bonus",
                       "enchantment": "minecraft:fortune",
-                      "formula": "binomial_with_bonus_count",
-                      "parameters": {
-                        "extra": 0,
-                        "probability": 1
-                      }
+                      "formula": "minecraft:ore_drops"
                     },
                     {
                       "function": "set_components",
                       "components": {
                         "minecraft:rarity": "uncommon",
                         "minecraft:custom_model_data": {
-                  "floats": [
-                    2003
-                  ]
-                }
+                          "floats": [
+                            2003
+                          ]
+                        }
                       }
                     },
                     {
@@ -120,24 +107,7 @@
                     {
                       "function": "apply_bonus",
                       "enchantment": "minecraft:fortune",
-                      "formula": "ore_drops",
-                      "conditions": [
-                        {
-                          "condition": "minecraft:match_tool",
-                          "predicate": {
-                            "predicates": {
-                              "enchantments": [
-                                {
-                                  "enchantments": "minecraft:fortune",
-                                  "levels": {
-                                    "min": 1
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
+                      "formula": "ore_drops"
                     }
                   ]
                 },
@@ -156,7 +126,10 @@
                     {
                       "function": "set_count",
                       "add": true,
-                      "count": 1,
+                      "count": {
+                        "max": 3,
+                        "min": 1
+                      },
                       "conditions": [
                         {
                           "condition": "match_tool",
@@ -165,27 +138,27 @@
                               "item_name": "\"Bismuth Bronze Pickaxe\""
                             }
                           }
+                        },
+                        {
+                          "condition": "random_chance",
+                          "chance": 0.33
                         }
                       ]
                     },
                     {
                       "function": "apply_bonus",
                       "enchantment": "minecraft:fortune",
-                      "formula": "binomial_with_bonus_count",
-                      "parameters": {
-                        "extra": 0,
-                        "probability": 1
-                      }
+                      "formula": "minecraft:ore_drops"
                     },
                     {
                       "function": "set_components",
                       "components": {
                         "minecraft:rarity": "uncommon",
                         "minecraft:custom_model_data": {
-                  "floats": [
-                    2001
-                  ]
-                }
+                          "floats": [
+                            2001
+                          ]
+                        }
                       }
                     },
                     {

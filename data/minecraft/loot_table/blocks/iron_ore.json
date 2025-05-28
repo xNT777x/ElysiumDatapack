@@ -13,7 +13,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 4,
                 "max": 9,
                 "type": "minecraft:uniform"
               }
@@ -21,7 +21,10 @@
             {
               "function": "set_count",
               "add": true,
-              "count": 2,
+              "count": {
+                "max": 4,
+                "min": 9
+              },
               "conditions": [
                 {
                   "condition": "match_tool",
@@ -30,17 +33,17 @@
                       "item_name": "\"Bismuth Bronze Pickaxe\""
                     }
                   }
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.33
                 }
               ]
             },
             {
               "function": "apply_bonus",
               "enchantment": "minecraft:fortune",
-              "formula": "binomial_with_bonus_count",
-              "parameters": {
-                "extra": 1,
-                "probability": 1
-              }
+              "formula": "minecraft:ore_drops"
             },
             {
               "function": "set_components",

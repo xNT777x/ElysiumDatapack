@@ -51,7 +51,7 @@
                     },
                     {
                       "condition": "random_chance",
-                      "chance": 0.57
+                      "chance": 0.33
                     }
                   ]
                 },

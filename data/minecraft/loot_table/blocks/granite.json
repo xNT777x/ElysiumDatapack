@@ -30,20 +30,6 @@
               ]
             },
             {
-              "type": "group",
-              "children": [
-                {
-                  "type": "empty"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "random_chance",
-                  "chance": 0.01
-                }
-              ]
-            },
-            {
               "type": "minecraft:group",
               "children": [
                 {
@@ -65,24 +51,22 @@
                     {
                       "function": "set_count",
                       "count": {
-                        "max": 2,
-                        "min": 1,
-                        "type": "minecraft:uniform"
+                        "max": 3,
+                        "min": 1
                       }
                     },
                     {
                       "function": "apply_bonus",
                       "enchantment": "minecraft:fortune",
-                      "formula": "minecraft:binomial_with_bonus_count",
-                      "parameters": {
-                        "extra": 0,
-                        "probability": 1
-                      }
+                      "formula": "minecraft:ore_drops"
                     },
                     {
                       "function": "set_count",
                       "add": true,
-                      "count": 1,
+                      "count": {
+                        "max": 3,
+                        "min": 1
+                      },
                       "conditions": [
                         {
                           "condition": "minecraft:match_tool",
@@ -91,6 +75,10 @@
                               "minecraft:item_name": "\"Bismuth Bronze Pickaxe\""
                             }
                           }
+                        },
+                        {
+                          "condition": "random_chance",
+                          "chance": 0.33
                         }
                       ]
                     }
@@ -105,8 +93,7 @@
                       "function": "set_count",
                       "count": {
                         "min": 1,
-                        "max": 3,
-                        "type": "minecraft:uniform"
+                        "max": 3
                       }
                     },
                     {
@@ -114,10 +101,10 @@
                       "components": {
                         "minecraft:rarity": "uncommon",
                         "minecraft:custom_model_data": {
-                  "floats": [
-                    2002
-                  ]
-                }
+                          "floats": [
+                            2002
+                          ]
+                        }
                       }
                     },
                     {
@@ -132,16 +119,15 @@
                     {
                       "function": "apply_bonus",
                       "enchantment": "minecraft:fortune",
-                      "formula": "minecraft:binomial_with_bonus_count",
-                      "parameters": {
-                        "extra": 0,
-                        "probability": 1
-                      }
+                      "formula": "minecraft:ore_drops"
                     },
                     {
                       "function": "set_count",
                       "add": true,
-                      "count": 1,
+                      "count": {
+                        "max": 3,
+                        "min": 1
+                      },
                       "conditions": [
                         {
                           "condition": "minecraft:match_tool",
@@ -150,6 +136,10 @@
                               "minecraft:item_name": "\"Bismuth Bronze Pickaxe\""
                             }
                           }
+                        },
+                        {
+                          "condition": "random_chance",
+                          "chance": 0.33
                         }
                       ]
                     }

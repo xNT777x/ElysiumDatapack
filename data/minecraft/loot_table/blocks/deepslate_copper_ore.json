@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "minecraft:deepslate_copper_ore"
+              "name": "minecraft:copper_ore"
             },
             {
               "type": "minecraft:item",
@@ -43,7 +43,10 @@
                 {
                   "function": "set_count",
                   "add": true,
-                  "count": 2,
+                  "count": {
+                    "max": 5,
+                    "min": 2
+                  },
                   "conditions": [
                     {
                       "condition": "match_tool",
@@ -52,6 +55,10 @@
                           "item_name": "\"Bismuth Bronze Pickaxe\""
                         }
                       }
+                    },
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.33
                     }
                   ]
                 },
@@ -72,5 +79,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/deepslate_copper_ore"
+  "random_sequence": "minecraft:blocks/copper_ore"
 }

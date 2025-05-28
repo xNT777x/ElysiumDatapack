@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "minecraft:deepslate_gold_ore"
+              "name": "minecraft:gold_ore"
             },
             {
               "type": "minecraft:item",
@@ -51,7 +51,7 @@
                     },
                     {
                       "condition": "random_chance",
-                      "chance": 0.57
+                      "chance": 0.33
                     }
                   ]
                 },
@@ -72,5 +72,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/deepslate_gold_ore"
+  "random_sequence": "minecraft:blocks/gold_ore"
 }

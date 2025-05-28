@@ -40,13 +40,13 @@
                     {
                       "condition": "minecraft:match_tool",
                       "predicate": {
-                      "components": {
-                        "minecraft:item_name": "\"Bismuth Bronze Sword\"",
-                        "minecraft:custom_model_data": {
-                  "floats": [
-                    1003
-                  ]
-                }
+                        "components": {
+                          "minecraft:item_name": "\"Bismuth Bronze Sword\"",
+                          "minecraft:custom_model_data": {
+                            "floats": [
+                              1003
+                            ]
+                          }
                         }
                       }
                     },
@@ -56,10 +56,10 @@
                         "components": {
                           "minecraft:item_name": "\"Titanium Sword\"",
                           "minecraft:custom_model_data": {
-                  "floats": [
-                    1005
-                  ]
-                }
+                            "floats": [
+                              1005
+                            ]
+                          }
                         }
                       }
                     }
@@ -117,8 +117,8 @@
                     {
                       "condition": "minecraft:match_tool",
                       "predicate": {
-                      "components": {
-                        "minecraft:item_name": "\"Bismuth Bronze Sword\""
+                        "components": {
+                          "minecraft:item_name": "\"Bismuth Bronze Sword\""
                         }
                       }
                     },

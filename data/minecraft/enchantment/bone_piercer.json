@@ -1,0 +1,51 @@
+{
+    "anvil_cost": 0,
+    "description": "Bone Piercer",
+    "max_cost": {
+        "base": 1,
+        "per_level_above_first": 0
+    },
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 0
+    },
+    "max_level": 5,
+    "slots": [
+        "hand"
+    ],
+    "supported_items": "#minecraft:enchantable/bow",
+    "weight": 10,
+    "effects": {
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 1.0,
+                        "per_level_above_first": 0.5
+                    }
+                },
+                "requirements": {
+                    "condition": "all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "direct_attacker",
+                            "predicate": {
+                                "type": "#minecraft:arrows"
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type": "#minecraft:skeletons"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
