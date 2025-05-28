@@ -14,8 +14,7 @@
               "function": "set_count",
               "count": {
                 "min": 0,
-                "max": 2,
-                "type": "minecraft:uniform"
+                "max": 2
               }
             },
             {
@@ -32,8 +31,7 @@
               "add": true,
               "count": {
                 "max": 1,
-                "min": 0,
-                "type": "minecraft:uniform"
+                "min": 0
               },
               "conditions": [
                 {
@@ -76,8 +74,7 @@
               "function": "set_count",
               "count": {
                 "min": 0,
-                "max": 1,
-                "type": "minecraft:uniform"
+                "max": 1
               }
             },
             {
@@ -94,8 +91,7 @@
               "add": true,
               "count": {
                 "max": 1,
-                "min": 0,
-                "type": "minecraft:uniform"
+                "min": 0
               },
               "conditions": [
                 {
@@ -133,8 +129,7 @@
               "add": false,
               "count": {
                 "min": 0,
-                "max": 1,
-                "type": "minecraft:uniform"
+                "max": 1
               }
             },
             {
@@ -166,8 +161,7 @@
               "add": true,
               "count": {
                 "max": 1,
-                "min": 0,
-                "type": "minecraft:uniform"
+                "min": 0
               },
               "conditions": [
                 {
@@ -211,8 +205,7 @@
               "add": false,
               "count": {
                 "min": 0,
-                "max": 1,
-                "type": "minecraft:uniform"
+                "max": 1
               }
             },
             {
@@ -229,8 +222,7 @@
               "add": true,
               "count": {
                 "max": 1,
-                "min": 0,
-                "type": "minecraft:uniform"
+                "min": 0
               },
               "conditions": [
                 {
