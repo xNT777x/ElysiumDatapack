@@ -27,28 +27,38 @@
             },
             {
               "function": "set_count",
-              "add": true,
               "count": {
                 "max": 1,
                 "min": 0
               },
+              "add": true,
               "conditions": [
                 {
-                  "condition": "minecraft:any_of",
+                  "condition": "any_of",
                   "terms": [
                     {
-                      "condition": "minecraft:match_tool",
+                      "condition": "entity_properties",
+                      "entity": "attacker",
                       "predicate": {
-                        "components": {
-                          "minecraft:item_name": "\"Bismuth Bronze Sword\""
+                        "equipment": {
+                          "mainhand": {
+                            "components": {
+                              "item_name": "\"Bismuth Bronze Sword\""
+                            }
+                          }
                         }
                       }
                     },
                     {
-                      "condition": "minecraft:match_tool",
+                      "condition": "entity_properties",
+                      "entity": "attacker",
                       "predicate": {
-                        "components": {
-                          "minecraft:item_name": "\"Titanium Sword\""
+                        "equipment": {
+                          "mainhand": {
+                            "components": {
+                              "item_name": "\"Titanium Sword\""
+                            }
+                          }
                         }
                       }
                     }
@@ -63,60 +73,53 @@
       "rolls": 1.0
     },
     {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:killed_by_player"
-        },
-        {
-          "condition": "minecraft:random_chance_with_enchanted_bonus",
-          "enchanted_chance": {
-            "type": "minecraft:linear",
-            "base": 0.035,
-            "per_level_above_first": 0.01
-          },
-          "enchantment": "minecraft:looting",
-          "unenchanted_chance": 0.025
-        }
-      ],
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_ingot"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "alternatives",
+          "children": [
             {
+              "type": "loot_table",
+              "value": "helper/zombie_loot_rare",
               "conditions": [
                 {
-                  "condition": "minecraft:any_of",
+                  "condition": "minecraft:killed_by_player"
+                },
+                {
+                  "condition": "minecraft:random_chance_with_enchanted_bonus",
+                  "enchanted_chance": {
+                    "type": "minecraft:linear",
+                    "base": 0.045,
+                    "per_level_above_first": 0.01
+                  },
+                  "enchantment": "minecraft:looting",
+                  "unenchanted_chance": 0.035
+                },
+                {
+                  "condition": "any_of",
                   "terms": [
                     {
-                      "condition": "minecraft:entity_properties",
-                      "entity": "this",
+                      "condition": "entity_properties",
+                      "entity": "attacker",
                       "predicate": {
-                        "flags": {
-                          "is_on_fire": true
+                        "equipment": {
+                          "mainhand": {
+                            "components": {
+                              "item_name": "\"Bismuth Bronze Sword\""
+                            }
+                          }
                         }
                       }
                     },
                     {
-                      "condition": "minecraft:entity_properties",
-                      "entity": "direct_attacker",
+                      "condition": "entity_properties",
+                      "entity": "attacker",
                       "predicate": {
                         "equipment": {
                           "mainhand": {
-                            "predicates": {
-                              "minecraft:enchantments": [
-                                {
-                                  "enchantments": "#minecraft:smelts_loot"
-                                }
-                              ]
+                            "components": {
+                              "item_name": "\"Titanium Sword\""
                             }
                           }
                         }
@@ -124,14 +127,30 @@
                     }
                   ]
                 }
-              ],
-              "function": "minecraft:furnace_smelt"
+              ]
+            },
+            {
+              "type": "loot_table",
+              "value": "helper/zombie_loot_rare",
+              "conditions": [
+                {
+                  "condition": "minecraft:killed_by_player"
+                },
+                {
+                  "condition": "minecraft:random_chance_with_enchanted_bonus",
+                  "enchanted_chance": {
+                    "type": "minecraft:linear",
+                    "base": 0.035,
+                    "per_level_above_first": 0.01
+                  },
+                  "enchantment": "minecraft:looting",
+                  "unenchanted_chance": 0.025
+                }
+              ]
             }
-          ],
-          "name": "minecraft:potato"
+          ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ],
   "random_sequence": "minecraft:entities/husk"

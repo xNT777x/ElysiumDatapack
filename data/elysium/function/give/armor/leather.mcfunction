@@ -1,0 +1,4 @@
+give @p leather_helmet[max_damage=75,rarity="rare",attribute_modifiers=[{id:"max_health_head",type:"max_health",amount:1,operation:"add_value",slot:"head"}]] 1
+give @p leather_chestplate[rarity="rare",attribute_modifiers=[{id:"max_health_chest",type:"max_health",amount:1,operation:"add_value",slot:"chest"}]] 1
+give @p leather_leggings[rarity="rare",attribute_modifiers=[{id:"max_health_legs",type:"max_health",amount:1,operation:"add_value",slot:"legs"}]] 1
+give @p leather_boots[max_damage=75,rarity="rare",attribute_modifiers=[{id:"max_health_feet",type:"max_health",amount:1,operation:"add_value",slot:"feet"}]] 1

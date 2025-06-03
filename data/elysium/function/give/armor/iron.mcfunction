@@ -1,0 +1,4 @@
+give @p iron_helmet[max_damage=1000,rarity="rare",attribute_modifiers=[{id:"max_health_head",type:"max_health",amount:2,operation:"add_value",slot:"head"}]] 1
+give @p iron_chestplate[max_damage=1000,rarity="rare",attribute_modifiers=[{id:"max_health_chest",type:"max_health",amount:4,operation:"add_value",slot:"chest"}]] 1
+give @p iron_leggings[max_damage=1000,rarity="rare",attribute_modifiers=[{id:"max_health_legs",type:"max_health",amount:3,operation:"add_value",slot:"legs"}]] 1
+give @p iron_boots[max_damage=1000,rarity="rare",attribute_modifiers=[{id:"max_health_feet",type:"max_health",amount:1,operation:"add_value",slot:"feet"},{id:"safe_fall_distance_feet",type:"safe_fall_distance",amount:0.5,operation:"add_value",slot:"feet"}]] 1

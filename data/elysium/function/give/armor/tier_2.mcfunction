@@ -1,0 +1,2 @@
+tellraw @s "Tier 1"
+tellraw @s {"text": "", "color": "blue", "underlined": true, "extra": [{"text": "Netherite", "clickEvent": {"action": "run_command", "value": "/function elysium:give/armor/netherite"}}, {"text": "   ", "underlined": false}, {"text": "Hallowed", "clickEvent": {"action": "run_command", "value": "/function elysium:give/armor/hallowed"}}, {"text": "   ", "underlined": false}, {"text": "Tempered Netherite", "clickEvent": {"action": "run_command", "value": "/function elysium:give/armor/tempered_netherite"}}, {"text": "   ", "underlined": false}]}
