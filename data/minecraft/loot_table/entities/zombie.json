@@ -151,6 +151,87 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.25
+                }
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": 1,
+              "add": true,
+              "conditions": [
+                {
+                  "condition": "any_of",
+                  "terms": [
+                    {
+                      "condition": "entity_properties",
+                      "entity": "attacker",
+                      "predicate": {
+                        "equipment": {
+                          "mainhand": {
+                            "components": {
+                              "item_name": "\"Bismuth Bronze Sword\""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "entity": "attacker",
+                      "predicate": {
+                        "equipment": {
+                          "mainhand": {
+                            "components": {
+                              "item_name": "\"Titanium Sword\""
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "condition": "random_chance",
+                  "chance": 0.25
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": "Salt",
+              "target": "item_name"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "rarity": "uncommon",
+                "custom_model_data": {
+                  "floats": [
+                    2008
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "random_sequence": "minecraft:entities/zombie"

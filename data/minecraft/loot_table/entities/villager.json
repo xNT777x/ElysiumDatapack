@@ -188,7 +188,8 @@
               "count": {
                 "max": 2,
                 "min": 0
-              }
+              },
+              "add": false
             },
             {
               "function": "enchanted_count_increase",

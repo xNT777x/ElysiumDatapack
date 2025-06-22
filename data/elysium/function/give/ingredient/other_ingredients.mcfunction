@@ -6,3 +6,5 @@ give @p paper[item_name='"Pillow"',rarity="uncommon",custom_model_data={floats:[
 give @p phantom_membrane[item_name='"Animal Fat"',rarity="uncommon"] 64
 give @p charcoal[custom_name='{"color":"dark_aqua","italic":false,"text":"Dense Coal"}'] 64
 give @p brown_dye[item_name='"Mud Clumps"',rarity="uncommon",custom_model_data={floats:[2401]}] 64
+give @p quartz[item_name='"Clear Quartz"',rarity="uncommon"] 64
+give @p gunpowder[item_name='"Salt"',rarity="uncommon",custom_model_data={floats:[2008]}] 64
