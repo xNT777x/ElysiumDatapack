@@ -34,10 +34,8 @@
           "functions": [
             {
               "function": "set_count",
-              "count": {
-                "min": 10,
-                "max": 30
-              }
+              "count": 10,
+              "add": false
             },
             {
               "function": "set_components",
@@ -80,28 +78,28 @@
       "entries": [
         {
           "type": "item",
-          "weight": 3,
+          "weight": 1,
           "name": "minecraft:raw_copper",
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 2,
-                "max": 5
+                "min": 1,
+                "max": 3
               }
             }
           ]
         },
         {
           "type": "item",
-          "weight": 3,
+          "weight": 1,
           "name": "minecraft:gunpowder",
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 2,
-                "max": 8
+                "min": 1,
+                "max": 3
               }
             },
             {
@@ -128,14 +126,14 @@
         },
         {
           "type": "item",
-          "weight": 3,
+          "weight": 1,
           "name": "minecraft:gunpowder",
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 2,
-                "max": 8
+                "min": 1,
+                "max": 3
               }
             },
             {
@@ -162,14 +160,14 @@
         },
         {
           "type": "item",
-          "weight": 3,
+          "weight": 1,
           "name": "minecraft:gunpowder",
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 2,
-                "max": 8
+                "min": 1,
+                "max": 3
               }
             },
             {
@@ -196,14 +194,14 @@
         },
         {
           "type": "item",
-          "weight": 3,
+          "weight": 1,
           "name": "minecraft:gunpowder",
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 2,
-                "max": 8
+                "min": 1,
+                "max": 3
               }
             },
             {
@@ -230,15 +228,12 @@
         },
         {
           "type": "item",
-          "weight": 3,
+          "weight": 1,
           "name": "minecraft:gunpowder",
           "functions": [
             {
               "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 9
-              }
+              "count": 1
             },
             {
               "function": "set_components",
@@ -264,14 +259,14 @@
         },
         {
           "type": "item",
-          "weight": 7,
+          "weight": 1,
           "name": "minecraft:brown_dye",
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 4,
-                "max": 8
+                "min": 2,
+                "max": 5
               }
             },
             {

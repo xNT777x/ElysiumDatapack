@@ -28,10 +28,7 @@
           "functions": [
             {
               "function": "set_count",
-              "count": {
-                "min": 30,
-                "max": 10
-              }
+              "count": 25
             },
             {
               "function": "set_components",
