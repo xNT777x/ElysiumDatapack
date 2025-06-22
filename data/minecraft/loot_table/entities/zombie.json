@@ -163,17 +163,19 @@
             {
               "function": "set_count",
               "add": false,
-              "count": 1,
-              "conditions": [
-                {
-                  "condition": "random_chance",
-                  "chance": 0.25
-                }
-              ]
+              "count": {
+                "type": "binomial",
+                "n": 1,
+                "p": 0.1
+              }
             },
             {
               "function": "set_count",
-              "count": 1,
+              "count": {
+                "type": "binomial",
+                "n": 1,
+                "p": 0.1
+              },
               "add": true,
               "conditions": [
                 {
@@ -206,10 +208,6 @@
                       }
                     }
                   ]
-                },
-                {
-                  "condition": "random_chance",
-                  "chance": 0.25
                 }
               ]
             },
