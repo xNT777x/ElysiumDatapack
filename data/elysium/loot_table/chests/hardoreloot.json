@@ -129,14 +129,11 @@
         {
           "type": "minecraft:item",
           "weight": 2,
-          "name": "minecraft:iron_ore",
+          "name": "minecraft:diamond",
           "functions": [
             {
               "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
+              "count": 1
             }
           ]
         }

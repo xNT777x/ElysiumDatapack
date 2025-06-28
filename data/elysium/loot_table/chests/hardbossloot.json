@@ -16,7 +16,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 2,
           "name": "minecraft:diamond",
           "functions": [
             {
